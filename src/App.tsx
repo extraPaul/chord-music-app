@@ -3,6 +3,7 @@ import logo from "./logo.svg";
 import "./App.css";
 
 import Keyboard from "react-piano-keyboard";
+import Guitar from "react-guitar";
 
 function App() {
   const audioContext = new Audio();
@@ -16,7 +17,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <Keyboard
+        <Guitar strings={[0, 1, 2, 2, 0, -1]} />
+        {/* <Keyboard
           keyboardWidth={400}
           classKeyboard={"classKeyboard"}
           classWhiteKeys={"classWhiteKeys"}
@@ -24,7 +26,7 @@ function App() {
           classBlackKeys={"classBlackKeys"}
           classBlackKey={"classBlackKey"}
           noteSounds={soundObject}
-        />
+        /> */}
       </header>
     </div>
   );
