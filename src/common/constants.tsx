@@ -17,3 +17,5 @@ export const notes = {
   Gflat: "Gb",
   Gsharp: "G#",
 };
+
+export const context = { major: "MAJOR", minor: "MINOR" };
